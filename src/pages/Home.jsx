@@ -1,13 +1,14 @@
 import React from 'react';
 
+import Carousel from '../partials/Carousel';
 import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
-import FeaturesZigZag from '../partials/FeaturesZigzag';
+// import FeaturesZigZag from '../partials/FeaturesZigzag';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
-import Banner from '../partials/Banner';
+// import Banner from '../partials/Banner';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -25,13 +26,14 @@ function Home() {
 
         {/*  Page sections */}
         <HeroHome />
+        <Carousel />
         <FeaturesBlocks />
-        <FeaturesZigZag />
-        <Testimonials />
+        {/* <FeaturesZigZag /> */}
+        {/* <Testimonials /> */}
         <Newsletter />
       </main>
 
-      <Banner />
+      {/* <Banner /> */}
 
       {/*  Site footer */}
       <Footer />

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+// import React, { useState } from 'react';
+// import Modal from '../utils/Modal';
 
-import HeroImage from '../images/Cover.png';
-import HeroVideo from '../videos/MoneyTrees.mp4';
+// import HeroImage from '../images/Cover.png';
+// import HeroVideo from '../videos/MoneyTrees.mp4';
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
+  // const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section>
@@ -19,8 +19,8 @@ function HeroHome() {
         >
           <svg
             className="max-w-full"
-            width="564"
-            height="552"
+            width="846"
+            height="828"
             viewBox="0 0 564 552"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -48,19 +48,19 @@ function HeroHome() {
         </div>
 
         {/* Hero content */}
-        <div className="relative pt-32 pb-10 md:pt-40 md:pb-16">
+        <div className="relative pt-32 md:pt-40">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Max $ back.
+              Max $ for you.
             </h1>
             <h3 className="h3 mb-4" data-aos="fade-up">
-              Maximizing Green Impact should not be a hassle.
+              Max impact for the planet.
             </h3>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
-              Picking between having money and the planet should never be a choice. We make it easy to do both.
+              Picking between having money and the planet should never be a choice.
             </p>
-            <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
+            {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
                 <a className="btn text-white bg-green-600 hover:bg-green-700 w-full mb-4 sm:w-auto sm:mb-0" href="#0">
                   Join Waitlist
@@ -71,10 +71,10 @@ function HeroHome() {
                   Learn more
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
-          {/* Hero image */}
+          {/* Hero image
           <div>
             <div className="relative flex justify-center items-center" data-aos="fade-up" data-aos-delay="200">
               <img className="mx-auto" src={HeroImage} width="1024" height="504" alt="Hero" />
@@ -108,7 +108,7 @@ function HeroHome() {
               </a>
             </div>
 
-            {/* Modal */}
+            Modal
             <Modal
               id="modal"
               ariaLabel="modal-headline"
@@ -119,7 +119,7 @@ function HeroHome() {
                 <iframe className="absolute w-full h-full" src={HeroVideo} title="Video" allowFullScreen></iframe>
               </div>
             </Modal>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
