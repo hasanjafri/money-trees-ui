@@ -61,7 +61,7 @@ function Header() {
               </li> */}
               <li>
                 <Link onClick={handleClickScroll} className="btn-sm text-white bg-green-600 hover:bg-green-700 ml-3">
-                  Join Waitlist
+                  Early Access
                 </Link>
               </li>
             </ul>
@@ -109,7 +109,7 @@ function Header() {
                     onClick={handleClickScroll}
                     className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white bg-green-600 hover:bg-green-700 transition duration-150 ease-in-out"
                   >
-                    Join Waitlist
+                    Early Access
                   </Link>
                 </li>
               </ul>

@@ -27,10 +27,10 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <Carousel />
+        <Newsletter />
         <FeaturesBlocks />
         {/* <FeaturesZigZag /> */}
         {/* <Testimonials /> */}
-        <Newsletter />
       </main>
 
       {/* <Banner /> */}

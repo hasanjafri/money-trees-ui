@@ -41,10 +41,9 @@ function FeaturesBlocks() {
                   strokeWidth="2"
                 />
               </svg>
-              <h4 className="h4 mb-2">Highest $ reward available</h4>
+              <h4 className="h4 mb-2">High $ reward matching</h4>
               <p className="text-lg text-gray-400 text-center">
-                With our app, you'll get access to the highest cash back rewards in the market. Every eligible
-                transaction will earn you cash rewards higher than the market average to maximize your $.
+                Every eligible transaction will earn you cash rewards higher than the market average to maximize your $.
               </p>
             </div>
 
@@ -72,10 +71,9 @@ function FeaturesBlocks() {
                   strokeLinecap="square"
                 />
               </svg>
-              <h4 className="h4 mb-2">Don't ever miss out</h4>
+              <h4 className="h4 mb-2">Don't miss out on $</h4>
               <p className="text-lg text-gray-400 text-center">
-                We believe you deserve to get value back on every transaction you make. That’s why we try to cover 100%
-                of your transaction with cash rewards or green points or both
+                We cover upto 100% of your transaction with cash rewards or green points.
               </p>
             </div>
 
@@ -96,8 +94,7 @@ function FeaturesBlocks() {
               </svg>
               <h4 className="h4 mb-2">Up to 10X cash</h4>
               <p className="text-lg text-gray-400 text-center">
-                We are committed to delivering $ to you and also saving the planet. You show us that you care for the
-                planet by reaching green score goals and we will unlock cash rewards as high as 10% for you
+                Unlock cash rewards as high as 10% by reaching monthly green goals.
               </p>
             </div>
 
@@ -120,8 +117,7 @@ function FeaturesBlocks() {
               </svg>
               <h4 className="h4 mb-2">Redeem more than just $</h4>
               <p className="text-lg text-gray-400 text-center">
-                The cash rewards you earn are yours totally, you redeem it whenever you want. The green points you
-                redeem not only gives you cash in the pocket but also plants trees every time you do it
+                The green points not only give you cash in the pocket but also plants trees every time you redeem it.
               </p>
             </div>
 
@@ -144,8 +140,7 @@ function FeaturesBlocks() {
               </svg>
               <h4 className="h4 mb-2">Simple and hassle-free</h4>
               <p className="text-lg text-gray-400 text-center">
-                Earning value back on your transactions should not be difficult, it is your right and using it is now
-                extremely easy
+                Earning value back on your transactions should not be difficult, using it is now extremely easy.
               </p>
             </div>
 
@@ -170,10 +165,9 @@ function FeaturesBlocks() {
                   />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Don't leave $ on the table</h4>
+              <h4 className="h4 mb-2">We give back</h4>
               <p className="text-lg text-gray-400 text-center">
-                Every time you shop, the merchant wants to reward you for spending your hard earned money. But the path
-                to get to this reward is usually full of hassle, but not anymore!
+                Every time you shop, we give away 10% of the revenue we make from you to a green charity.
               </p>
             </div>
           </div>

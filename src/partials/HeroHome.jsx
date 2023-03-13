@@ -51,13 +51,14 @@ function HeroHome() {
         <div className="relative pt-32 md:pt-40">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-6 md:pb-8">
-            <h1 className="h1 mb-4" data-aos="fade-up">
+            <h1 className="h1 mb-4 d-flex" data-aos="fade-up">
               Max $ for you.
             </h1>
-            <h3 className="h3 mb-4" data-aos="fade-up">
+            <h1 className="h1 mb-4 text-green-500">Max impact for the planet.</h1>
+            {/* <h3 className="h3 mb-4" data-aos="fade-up">
               Max impact for the planet.
-            </h3>
-            <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">
+            </h3> */}
+            <p className="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
               Picking between having money and the planet should never be a choice.
             </p>
             {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">

@@ -34,8 +34,8 @@ function Newsletter() {
           <div className="relative flex flex-col lg:flex-row justify-between items-center">
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left lg:w-1/2">
-              <h3 className="h3 text-white mb-2">Stay in the loop</h3>
-              <p className="text-green-200 text-lg">Join our newsletter to get top news before anyone else.</p>
+              <h3 className="h3 text-white mb-2">Get early access</h3>
+              <p className="text-green-200 text-lg">Join the waitlist to get top news before anyone else.</p>
             </div>
 
             {/* CTA form */}
@@ -48,7 +48,7 @@ function Newsletter() {
                   aria-label="Your best email…"
                 />
                 <a className="btn text-green-600 bg-green-100 hover:bg-white shadow" href="#0">
-                  Subscribe
+                  Submit
                 </a>
               </div>
               {/* Success message */}
