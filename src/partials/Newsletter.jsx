@@ -4,7 +4,7 @@ import Modal from '../utils/Modal';
 import MoneyTreeImg from '../images/moneytree.png';
 
 function Newsletter() {
-  const apiKey = import.meta.env.VITE_SIB_API_KEY;
+  const apiKey = import.meta.env.VITE_MONEY_TREE_API_KEY;
 
   const [email, setEmail] = useState('');
   const [showModal, setShowModal] = useState(false);
@@ -22,19 +22,20 @@ function Newsletter() {
         headers: {
           accept: 'application/json',
           'content-type': 'application/json',
-          'api-key': apiKey,
         },
-        body: JSON.stringify({ listIds: [3], updateEnabled: false, email }),
+        body: JSON.stringify({ api_key: apiKey, email }),
       };
 
-      fetch('https://api.sendinblue.com/v3/contacts', options)
-        .then((response) => response.json())
+      fetch('https://laughpadapp.com/api/money-trees/', options)
         .then((response) => {
-          if (response.code === 'duplicate_parameter') {
+          if (response.status === 200) {
+            setModalMessage('Thank you for joining our waitlist.');
+            setShowModal(true);
+          } else if (response.status === 400) {
             setModalMessage('You are already on our waitlist.');
             setShowModal(true);
           } else {
-            setModalMessage('Thank you for joining our waitlist.');
+            setModalMessage('Something went wrong. Please try again later.');
             setShowModal(true);
           }
         })
