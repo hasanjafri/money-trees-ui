@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 
+import Modal from '../utils/Modal';
+import MoneyTreeImg from '../images/moneytree.png';
+
 function Newsletter() {
   const apiKey = import.meta.env.VITE_SIB_API_KEY;
+
   const [email, setEmail] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
 
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -23,8 +29,20 @@ function Newsletter() {
 
       fetch('https://api.sendinblue.com/v3/contacts', options)
         .then((response) => response.json())
-        .then((response) => console.log(response))
-        .catch((err) => console.error(err));
+        .then((response) => {
+          if (response.code === 'duplicate_parameter') {
+            setModalMessage('You are already on our waitlist.');
+            setShowModal(true);
+          } else {
+            setModalMessage('Thank you for joining our waitlist.');
+            setShowModal(true);
+          }
+        })
+        .catch((err) => {
+          setModalMessage('Something went wrong. Please try again later.');
+          setShowModal(true);
+          console.error(err);
+        });
     }
   };
 
@@ -84,6 +102,26 @@ function Newsletter() {
             </form>
           </div>
         </div>
+        <Modal id="modal" ariaLabel="modal-headline" show={showModal} handleClose={() => setShowModal(false)}>
+          <div className="fixed z-50 inset-0 flex items-center justify-center">
+            <div className="absolute inset-0"></div>
+            <div className="relative text-center w-full max-w-md p-8 rounded-lg shadow-lg bg-white">
+              <div className="pb-4 text-center">
+                <img src={MoneyTreeImg} alt="Money Tree" />
+                <h2 className="text-3xl font-bold text-gray-800">Thank You!</h2>
+                <p className="text-lg text-gray-600 mt-2">{modalMessage}</p>
+              </div>
+              <div className="inline-block">
+                <button
+                  className="mt-4 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+                  onClick={() => setShowModal(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </Modal>
       </div>
     </section>
   );
