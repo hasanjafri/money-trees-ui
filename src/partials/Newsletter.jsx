@@ -1,6 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Newsletter() {
+  const apiKey = import.meta.env.VITE_SIB_API_KEY;
+  const [email, setEmail] = useState('');
+
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (isValidEmail(email)) {
+      const options = {
+        method: 'POST',
+        headers: {
+          accept: 'application/json',
+          'content-type': 'application/json',
+          'api-key': apiKey,
+        },
+        body: JSON.stringify({ listIds: [3], updateEnabled: false, email }),
+      };
+
+      fetch('https://api.sendinblue.com/v3/contacts', options)
+        .then((response) => response.json())
+        .then((response) => console.log(response))
+        .catch((err) => console.error(err));
+    }
+  };
+
   return (
     <section id="newsletter-section">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 border-t py-12 md:py-20 border-gray-800">
@@ -39,17 +66,18 @@ function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
+            <form className="w-full lg:w-1/2" onSubmit={handleSubmit}>
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
                 <input
                   type="email"
                   className="w-full appearance-none bg-green-700 border border-green-500 focus:border-green-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-green-400"
                   placeholder="Your best email…"
                   aria-label="Your best email…"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
-                <a className="btn text-green-600 bg-green-100 hover:bg-white shadow" href="#0">
+                <button type="submit" className="btn text-green-600 bg-green-100 hover:bg-white shadow">
                   Submit
-                </a>
+                </button>
               </div>
               {/* Success message */}
               {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
