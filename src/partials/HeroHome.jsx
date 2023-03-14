@@ -59,7 +59,7 @@ function HeroHome() {
               Max impact for the planet.
             </h3> */}
             <p className="text-xl text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="200">
-              Picking between having money and the planet should never be a choice.
+              Picking between saving money and the planet should never be a choice.
             </p>
             {/* <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
