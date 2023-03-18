@@ -5,8 +5,8 @@ import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import HeroHome from '../partials/HeroHome';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
-// import FeaturesZigZag from '../partials/FeaturesZigzag';
-import Testimonials from '../partials/Testimonials';
+import FeaturesZigZag from '../partials/FeaturesZigzag';
+// import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
 // import Banner from '../partials/Banner';
 import Footer from '../partials/Footer';
@@ -29,7 +29,7 @@ function Home() {
         <Carousel />
         <Newsletter />
         <FeaturesBlocks />
-        {/* <FeaturesZigZag /> */}
+        <FeaturesZigZag />
         {/* <Testimonials /> */}
       </main>
 
