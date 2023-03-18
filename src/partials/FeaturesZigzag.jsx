@@ -48,7 +48,7 @@ function FeaturesZigzag() {
                   <div className="font-architects-daughter text-xl text-green-600 mb-2">Cashback. Green points.</div>
                   <h3 className="h3 mb-3">Maximize Rewards and Champion Sustainability</h3>
                   <p className="text-xl text-gray-400 mb-4">
-                    Discover the ultimate cashback and environmental rewards experience with our loyalty program.
+                    Discover the ultimate cashback and environmental rewards experience with our rewards program.
                     Maximize your savings while making a positive impact on the planet through green points earned with
                     every purchase.
                   </p>
