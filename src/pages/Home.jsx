@@ -28,8 +28,8 @@ function Home() {
         <HeroHome />
         <Carousel />
         <Newsletter />
-        <FeaturesBlocks />
         <FeaturesZigZag />
+        <FeaturesBlocks />
         {/* <Testimonials /> */}
       </main>
 
